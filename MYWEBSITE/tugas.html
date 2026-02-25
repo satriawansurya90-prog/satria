@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M Satriawan SP | TKJ, IT Support & Electrical Engineer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = { darkMode: 'class' }
+</script>
+
+<style>
+body { transition: 0.4s; }
+video { filter: brightness(0.4); }
+.modal { display:none; }
+.modal.active { display:flex; }
+.glow:hover { box-shadow: 0 0 25px rgba(59,130,246,0.7); }
+</style>
+</head>
+
+<body class="bg-gray-100 dark:bg-black text-gray-800 dark:text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-white/70 dark:bg-black/70 backdrop-blur-lg shadow z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-lg">M Satriawan SP</h1>
+    <button onclick="toggleDark()" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded-lg hover:scale-110 transition">
+      🌙 / ☀️
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+    <source src="white-toyota-drifting.3840x2160.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div class="relative z-10 px-6 pt-20" data-aos="fade-up">
+    <img src="pp.png" class="w-40 h-40 rounded-full border-4 border-blue-500 mx-auto mb-6 shadow-xl hover:scale-110 transition duration-500">
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+      M Satriawan SP
+    </h2>
+    <p class="text-gray-200 max-w-2xl mx-auto">
+      Profesional TKJ, IT Support, dan Engineer Listrik dengan fokus pada
+      stabilitas jaringan, keamanan sistem, serta instalasi kelistrikan yang efisien.
+    </p>
+  </div>
+</section>
+
+<!-- KEAHLIAN -->
+<section class="py-20 bg-gray-200 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+      Keahlian & Kompetensi
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg glow transition" data-aos="fade-right">
+        <h4 class="font-bold text-xl mb-3">TKJ</h4>
+        <ul class="space-y-2 text-sm">
+          <li>✔ Instalasi LAN/WAN</li>
+          <li>✔ Mikrotik, DHCP, NAT</li>
+          <li>✔ Routing & Switching</li>
+          <li>✔ VLAN & Firewall</li>
+          <li>✔ Crimping & Testing Kabel</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg glow transition" data-aos="fade-up">
+        <h4 class="font-bold text-xl mb-3">IT Support</h4>
+        <ul class="space-y-2 text-sm">
+          <li>✔ Troubleshooting Hardware</li>
+          <li>✔ Instalasi OS Windows/Linux</li>
+          <li>✔ Maintenance Server</li>
+          <li>✔ Backup & Recovery</li>
+          <li>✔ Monitoring Sistem</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg glow transition" data-aos="fade-left">
+        <h4 class="font-bold text-xl mb-3">Engineer Listrik</h4>
+        <ul class="space-y-2 text-sm">
+          <li>✔ Instalasi Listrik Rumah</li>
+          <li>✔ Panel Listrik</li>
+          <li>✔ Perhitungan Beban Daya</li>
+          <li>✔ MCB & Grounding</li>
+          <li>✔ Troubleshooting Arus</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEVEL KEAHLIAN -->
+<section class="py-20 bg-gray-100 dark:bg-gray-950">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+      Level Keahlian
+    </h3>
+
+    <div class="space-y-6" data-aos="zoom-in">
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Mikrotik & Routing</span><span>90%</span>
+        </div>
+        <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">
+          <div class="bg-blue-600 h-3 rounded-full animate-pulse" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Troubleshooting IT</span><span>85%</span>
+        </div>
+        <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">
+          <div class="bg-green-500 h-3 rounded-full animate-pulse" style="width:85%"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-2">
+          <span>Instalasi Listrik</span><span>80%</span>
+        </div>
+        <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">
+          <div class="bg-yellow-500 h-3 rounded-full animate-pulse" style="width:80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERTIFIKAT -->
+<section class="py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-white text-center">
+  <h3 class="text-3xl font-bold mb-10" data-aos="fade-up">
+    Sertifikat Profesional
+  </h3>
+
+  <div class="flex justify-center" data-aos="zoom-in">
+    <img src="sertifikat.jpeg"
+         onclick="openModal()"
+         class="rounded-xl shadow-2xl max-w-3xl w-full cursor-pointer hover:scale-105 transition">
+  </div>
+</section>
+
+<!-- DOKUMENTASI -->
+<section class="py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12" data-aos="fade-up">
+      Dokumentasi Project
+    </h3>
+
+    <div class="relative w-full overflow-hidden rounded-2xl shadow-2xl">
+      <div id="slider" class="flex transition-transform duration-700">
+        <img src="eng.png" class="w-full flex-shrink-0 object-cover h-[500px]">
+        <img src="tkj.png" class="w-full flex-shrink-0 object-cover h-[500px]">
+        <img src="itsupport.png" class="w-full flex-shrink-0 object-cover h-[500px]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-white text-center">
+  <h3 class="text-3xl font-bold mb-10" data-aos="fade-up">
+    Video Project Saya
+  </h3>
+
+  <div class="max-w-4xl mx-auto px-6" data-aos="zoom-in">
+    <div class="relative" style="padding-bottom:56.25%; height:0;">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl"
+        src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal fixed inset-0 bg-black/90 items-center justify-center z-50">
+  <span onclick="closeModal()" class="absolute top-5 right-8 text-white text-4xl cursor-pointer">&times;</span>
+  <img src="sertifikat.jpeg" class="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl">
+</div>
+
+<!-- KONTAK -->
+<section class="py-20 text-center">
+  <h3 class="text-3xl font-bold mb-6">Kontak Saya</h3>
+
+  <div class="flex justify-center gap-12">
+    <a href="https://www.instagram.com/__satriaasp" target="_blank" class="hover:scale-125 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-12 mx-auto">
+      <p class="mt-2 text-sm">Instagram</p>
+    </a>
+
+    <a href="https://wa.me/6285183661672" target="_blank" class="hover:scale-125 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-12 mx-auto">
+      <p class="mt-2 text-sm">WhatsApp</p>
+    </a>
+
+    <a href="https://discord.gg/qSWcdpceqN" target="_blank" class="hover:scale-125 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" class="w-12 mx-auto">
+      <p class="mt-2 text-sm">Discord</p>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 bg-gray-300 dark:bg-gray-800">
+  © 2026 M Satriawan SP  
+  <br>
+  <span class="text-sm">TKJ Specialist | IT Support | Electrical Engineer</span>
+</footer>
+
+<script>
+AOS.init();
+
+function toggleDark() {
+  document.documentElement.classList.toggle('dark');
+}
+
+let index = 0;
+const slider = document.getElementById("slider");
+const totalSlides = slider.children.length;
+
+setInterval(() => {
+  index++;
+  if(index >= totalSlides) index = 0;
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}, 4000);
+
+function openModal() {
+  document.getElementById("modal").classList.add("active");
+}
+function closeModal() {
+  document.getElementById("modal").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
